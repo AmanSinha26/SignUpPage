@@ -1,0 +1,79 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(178, 89, 238);
+}
+#form{
+    width: 420px;
+    padding: 30px 30px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(20, 20, 24, 0.9);
+}
+#form h1{
+    color: white;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+}
+#username,#password{
+    background-color: rgba(20, 20, 24, 0.7);
+    display: block;
+    outline: none;
+    margin: 5px auto 0.5px;
+    text-align: center;
+    border: 3.5px solid rgb(64, 50, 252);
+    padding: 10px 6px;
+    width: 300px;
+    color: white;
+    border-radius: 15px;
+}
+
+#username:focus, #password:focus{
+    width: 320px;
+    border-color: sandybrown;
+}
+
+#submit, #reset{
+    display: block;
+    font-size: 16px;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(240, 240, 130);
+    padding: 6px 4px;
+    width: 100px;
+    background-color: rgba(20, 20, 24, 0.7);
+    color: white;
+    border-radius: 15px;
+    cursor:pointer;
+}
+#submit:hover, #reset:hover{
+    transform: translateY(-1.25px);
+    color: yellow;
+    border-color: yellow;
+    box-shadow: 0 0.5em 0.5em -0.4em #e8fa46;
+    font-weight: bold;
+}
+span{
+    margin-left: 10%;
+    color: red;
+    font-size: 12.5px;
+}
+#label{
+    color: rgb(152, 248, 160);
+    font-size: 19px;
+    margin-left: 9%;
+    margin-top: 18px;
+}
+#usernameSpan, #pwdSpan{
+    color: red;
+}
+#subSuccess{
+    color: rgb(95, 245, 81);
+    text-align: center;
+    visibility: hidden;
+}
+.btns{
+    display: flex;
+    justify-content:space-evenly;
+}
